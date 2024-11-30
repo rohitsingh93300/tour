@@ -101,7 +101,7 @@ const FeatureDestination = () => {
   ]
   return (
     <>
-      <section className="w-full py-12 md:py-24 lg:py-32 px-4 md:px-0">
+      <section className="w-full py-12 md:py-24 lg:py-32 px-6 md:px-0">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-3 font-serif">Featured Destinations</h2>
           <hr className='text-red-500 w-[200px] bg-red-500 mx-auto h-1 mb-10'></hr>

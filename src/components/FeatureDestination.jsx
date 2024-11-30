@@ -92,7 +92,7 @@ const FeatureDestination = () => {
     ]
   };
   const destinationJson = [
-    { name: 'Bali', img: Bali, time: '5 Days - 4 Nights' },
+    { name: 'Baliya', img: Bali, time: '5 Days - 4 Nights' },
     { name: 'Venice', img: Venice, time: '5 Days - 4 Nights' },
     { name: 'Tokyo', img: Tokyo, time: '5 Days - 4 Nights' },
     { name: 'India', img: India, time: '5 Days - 4 Nights' },

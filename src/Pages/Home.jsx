@@ -4,7 +4,7 @@ import FeatureDestination from '../components/FeatureDestination'
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
 import Contact from '../components/Contact'
-import MultipleItems from '../components/component'
+// import MultipleItems from '../components/component'
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <FeatureDestination/>
       <Gallery/>
       <Banner/>
-      <MultipleItems/>
+      {/* <MultipleItems/> */}
       <Contact/>
     </>
   )

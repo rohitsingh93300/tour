@@ -5,8 +5,12 @@ import Paris from '../assets/Paris.jpg'
 import Tokyo from '../assets/Tokyo.jpg'
 import India from '../assets/India.jpg'
 import Venice from '../assets/Venice.jpg'
-import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
+import back from '../assets/back.png'
+import next from '../assets/next.png'
+// import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
 import './CSS/reactSlick.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -42,25 +46,24 @@ import { Clock } from 'lucide-react'
 //   );
 // }
 
-const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-  <img src={IoIosArrowDropleftCircle} alt="prevArrow" {...props} />
-);
+ const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+   <img src={next} alt="prevArrow" {...props}  />
+ );
 
-const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-  <img src={IoIosArrowDroprightCircle} alt="nextArrow" {...props} />
-);
+ const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+   <img src={back} alt="nextArrow" {...props}  />
+ );
 
 
 const FeatureDestination = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
-    initialSlide: 0,
-    nextArrow: <SlickArrowLeft />,
-    prevArrow: <SlickArrowRight />,
+     nextArrow: <SlickArrowLeft />,
+     prevArrow: <SlickArrowRight />,
     responsive: [
       {
         breakpoint: 1024,
@@ -98,7 +101,7 @@ const FeatureDestination = () => {
   ]
   return (
     <>
-      <section className="w-full py-12 md:py-24 lg:py-32 ">
+      <section className="w-full py-12 md:py-24 lg:py-32 px-4 md:px-0">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-3 font-serif">Featured Destinations</h2>
           <hr className='text-red-500 w-[200px] bg-red-500 mx-auto h-1 mb-10'></hr>
@@ -106,8 +109,8 @@ const FeatureDestination = () => {
             <Slider {...settings}>
               
               {destinationJson.map((destination) => (
-                <div key={destination.name} className="overflow-hidden border shadow-lg shadow-gray-500 rounded-lg mb-5">
-                <div className="p-0">
+                <div key={destination.name} className="overflow-hidden border shadow-lg shadow-gray-500 rounded-lg mb-5 ">
+                <div className="p-0 ">
                   <img
                     src={destination.img}
                     alt={destination.name}

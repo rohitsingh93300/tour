@@ -7,17 +7,14 @@ import India from '../assets/India.jpg'
 import Venice from '../assets/Venice.jpg'
 import back from '../assets/back.png'
 import next from '../assets/next.png'
-// import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from "react-icons/io";
-import './CSS/reactSlick.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './CSS/reactSlick.css'
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 // import 'swiper/css';
 // import 'swiper/css/navigation';
-
-// import './styles.css';
 
 // import required modules
 // import { Navigation, Pagination } from 'swiper/modules';
@@ -60,15 +57,15 @@ const FeatureDestination = () => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 1,
      nextArrow: <SlickArrowLeft />,
      prevArrow: <SlickArrowRight />,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3,
           infinite: true,
           dots: true
@@ -109,7 +106,9 @@ const FeatureDestination = () => {
             <Slider {...settings}>
               
               {destinationJson.map((destination) => (
-                <div key={destination.name} className="overflow-hidden border shadow-lg shadow-gray-500 rounded-lg mb-5 ">
+                <div>
+
+                <div key={destination.name} className="overflow-hidden border shadow-lg shadow-gray-500 rounded-lg mb-5 mr-5">
                 <div className="p-0 ">
                   <img
                     src={destination.img}
@@ -126,6 +125,7 @@ const FeatureDestination = () => {
                   </div>
                 </div>
               </div>
+                </div>
 
           ))}
               

@@ -4,14 +4,16 @@ import FeatureDestination from '../components/FeatureDestination'
 import Banner from '../components/Banner'
 import Gallery from '../components/Gallery'
 import Contact from '../components/Contact'
+import MultipleItems from '../components/component'
 
 const Home = () => {
   return (
     <>
       <Hero/>
       <FeatureDestination/>
-      {/* <Gallery/> */}
+      <Gallery/>
       <Banner/>
+      <MultipleItems/>
       <Contact/>
     </>
   )

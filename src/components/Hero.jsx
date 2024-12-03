@@ -24,7 +24,7 @@ const Hero = () => {
     
   };
   return (
-    <div className="slider-container -mt-12 overflow-hidden">
+    <div className="slider-container -mt-12 overflow-hidden ">
       <Slider {...settings}>
         <div className='-z-10'>
           <div className='h-[650px] lg:h-[800px] relative -z-10'
@@ -86,17 +86,18 @@ const Hero = () => {
       </Slider>
       <div
 
-        className='bg-white border border-gray-300 shadow-lg rounded-md z-10 left-56 absolute hidden lg:block bottom-24 md:flex items-center justify-center w-[1050px] mx-auto p-4'>
+        className='bg-white border border-gray-300 shadow-lg rounded-md z-10 left-[15%] absolute hidden lg:block bottom-[15%] md:flex items-center justify-center w-[1050px] mx-auto p-4'>
         <div className='flex gap-3 items-center'>
           <div className='grid gap-5 grid-cols-4 flex-grow'>
             <div className='flex flex-col gap-2'>
               <label htmlFor="" className='flex font-semibold gap-1 items-center'><Search className='w-4 h-4' />Location</label>
               <select className='border border-gray-300 rounded-sm p-1'>
                 <option value="">Select Options</option>
-                <option value="">Mercedes</option>
-                <option value="">BMW</option>
-                <option value="">Lamborghini</option>
-                <option value="">Porshe</option>
+                <option value="">Bali</option>
+                <option value="">India</option>
+                <option value="">Tokyo</option>
+                <option value="">Venice</option>
+                <option value="">Paris</option>
               </select>
             </div>
             <div className='flex flex-col gap-2'>
@@ -112,10 +113,10 @@ const Hero = () => {
               <label htmlFor="" className='flex font-semibold gap-1 items-center'><Search className='w-4 h-4' />Guest</label>
               <select className='border border-gray-300 rounded-sm p-1'>
                 <option value="">Select option</option>
-                <option value="">Mercedes</option>
-                <option value="">BMW</option>
-                <option value="">Lamborghini</option>
-                <option value="">Porshe</option>
+                <option value="">2 Guest 1 children</option>
+                <option value="">2 Guest 1 children</option>
+                <option value="">2 Guest 1 children</option>
+                <option value="">2 Guest 1 children</option>
               </select>
             </div>
           </div>

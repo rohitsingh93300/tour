@@ -19,12 +19,12 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
 
                 <nav className='mt-12'>
                     <ul className='space-y-4 text-xl text-black flex flex-col'>
-                        <Link to='/'><li onClick={() => setShowMenu(false)}>Home</li></Link>
-                        <Link to='/mens'><li onClick={() => setShowMenu(false)}>About Us</li></Link>
-                        <Link to='/womens'><li onClick={() => setShowMenu(false)}>Tours</li></Link>
-                        <Link to='/kids'><li onClick={() => setShowMenu(false)}>Gallery</li></Link>
-                        <Link to='/kids'><li onClick={() => setShowMenu(false)}>Contact</li></Link>
-                        <Link to='/login'><button onClick={() => setShowMenu(false)} className='bg-red-500 text-white px-4 py-1 rounded-md'>Book Now</button></Link>
+                    <Link to='/'><li onClick={() => setShowMenu(false)}>Home</li></Link>
+                                <Link to='/about'><li onClick={() => setShowMenu(false)}>About Us</li></Link>
+                                <Link to='/tours'><li onClick={() => setShowMenu(false)}>Tours</li></Link>
+                                <Link to='/gallery'><li onClick={() => setShowMenu(false)}>Gallery</li></Link>
+                                <Link to='/contact'><li onClick={() => setShowMenu(false)}>Contact</li></Link>
+                        <Link to='#'><button onClick={() => setShowMenu(false)} className='bg-red-500 text-white px-4 py-1 rounded-md'>Book Now</button></Link>
                     </ul>
                 </nav>
             </div>

@@ -19,7 +19,7 @@ import './CSS/reactSlick.css'
 // import required modules
 // import { Navigation, Pagination } from 'swiper/modules';
 
-import { Clock } from 'lucide-react'
+import { Clock, Star } from 'lucide-react'
 
 // function SampleNextArrow(props) {
 //   const { className, style, onClick } = props;
@@ -89,16 +89,16 @@ const FeatureDestination = () => {
     ]
   };
   const destinationJson = [
-    { name: 'Baliya', img: Bali, time: '5 Days - 4 Nights' },
-    { name: 'Venice', img: Venice, time: '5 Days - 4 Nights' },
-    { name: 'Tokyo', img: Tokyo, time: '5 Days - 4 Nights' },
-    { name: 'India', img: India, time: '5 Days - 4 Nights' },
-    { name: 'Paris', img: Paris, time: '5 Days - 4 Nights' },
-    { name: 'Tokyo', img: Tokyo, time: '5 Days - 4 Nights' },
+    { name: 'Baliya', img: Bali, time: '5 Days - 4 Nights', star:'3 (12 reviews)', price:'69,999' },
+    { name: 'Venice', img: Venice, time: '5 Days - 4 Nights', star:'3 (12 reviews)', price:'69,999' },
+    { name: 'Tokyo', img: Tokyo, time: '5 Days - 4 Nights', star:'3 (12 reviews)', price:'69,999' },
+    { name: 'India', img: India, time: '5 Days - 4 Nights', star:'3 (12 reviews)', price:'69,999' },
+    { name: 'Paris', img: Paris, time: '5 Days - 4 Nights', star:'3 (12 reviews)', price:'69,999' },
+    { name: 'Tokyo', img: Tokyo, time: '5 Days - 4 Nights', star:'3 (12 reviews)', price:'69,999' },
   ]
   return (
     <>
-      <section className="w-full py-12 md:py-24 lg:py-32 px-6 md:px-0">
+      <section className="w-full py-12 md:py-24 lg:pt-32 px-6 md:px-0">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-3 font-serif">Featured Destinations</h2>
           <hr className='text-red-500 w-[200px] bg-red-500 mx-auto h-1 mb-10'></hr>
@@ -118,10 +118,14 @@ const FeatureDestination = () => {
                     className="object-cover w-full h-48 hover:scale-110 transition-all"
                   />
                   <div className="p-4">
-                    <p className='text-gray-500 flex items-center gap-1 text-sm mb-1'> <Clock className='w-4 h-4' />{destination.time}</p>
+                    <p className='text-gray-500 flex items-center gap-1 text-sm mb-1'> <Clock width={15} />{destination.time}</p>
                     <h3 className="text-xl font-bold mb-2">{destination.name}</h3>
-                    <p className="text-gray-600 mb-4">Experience the beauty and culture of {destination.name}.</p>
-                    <button className='px-3 py-2 bg-red-500 rounded-md text-white'>Learn More</button>
+                    <p className="flex gap-1 items-center"><Star width={20} fill="red"/>{destination.star}</p>
+                    <p className="text-gray-600 mb-4 mt-2">Experience the beauty and culture of {destination.name}.</p>
+                    <div className="flex gap-4">
+                    <button className='px-3 py-2 bg-red-500 rounded-md text-white'>$ {destination.price}</button>
+                    <button className='px-3 py-2 bg-black rounded-md text-white'>Learn More</button>
+                    </div>
                   </div>
                 </div>
               </div>

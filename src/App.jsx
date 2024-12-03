@@ -7,6 +7,7 @@ import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from "react-scroll-to-top";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,7 @@ const App = () => {
   return (
     <>
      <RouterProvider router={router} />
+     <ScrollToTop color='white' smooth style={{backgroundColor:'#EF4444', display:'flex' ,alignItems:'center',justifyContent:'center' }} className=''/>
     </>
   )
 }

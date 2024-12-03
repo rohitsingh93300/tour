@@ -7,6 +7,7 @@ import Contact from '../components/Contact'
 import Features from '../components/Features'
 // import MultipleItems from '../components/component'
 
+
 const Home = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Home = () => {
       <Banner/>
       {/* <MultipleItems/> */}
       <Contact/>
+      
     </>
   )
 }
